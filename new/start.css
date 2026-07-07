@@ -1,0 +1,7 @@
+.body{
+    color:black;
+}
+.vehicleform{
+    display: flex;
+    justify-content: center;
+}

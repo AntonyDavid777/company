@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fuel Range Calculator</title>
+  <link rel="stylesheet" href="fuel.css" />
+</head>
+<body style="background-color: antiquewhite;">
+  <main class="page">
+    <div class="card">
+      <div class="card-header">
+        <h1 class="title">Fuel Range Calculator</h1>
+        <p class="subtitle">Find out how far your budget can take you</p>
+      </div>
+
+      <form class="form" id="calcForm" novalidate>
+        <div class="field">
+          <label for="budget">Budget (Rs)</label>
+          <input type="number" id="budget" min="0" step="any" placeholder="e.g. 500" />
+        </div>
+
+        <div class="field">
+          <label for="price">Current Petrol Price (Rs / litre)</label>
+          <input type="number" id="price" min="0" step="any" placeholder="e.g. 100" />
+        </div>
+
+        <div class="field">
+          <label for="mileage">Average Mileage (km / litre)</label>
+          <input type="number" id="mileage" min="0" step="any" placeholder="e.g. 55" />
+        </div>
+
+        <p class="message" id="message" role="alert"></p>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Calculate</button>
+        </div>
+      </form>
+
+      <div class="result" id="result" hidden>
+        <div class="result-label">Your bike can run approximately</div>
+        <div class="result-value" id="resultValue">0 km</div>
+        <div class="result-detail" id="resultDetail"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="fuel.js"></script>
+</body>
+</html>

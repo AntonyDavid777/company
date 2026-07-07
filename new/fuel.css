@@ -1,0 +1,44 @@
+.result {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  text-align: center;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.result-label {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.result-value {
+  margin-top: 0.35rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.result-detail {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    padding-top: 13%;
+    font-size: larger;
+}
+.actions button{
+    background-color: beige;
+    color: black;
+    border-radius: 10%;
+    border-color: #090909;
+    cursor: pointer;
+}

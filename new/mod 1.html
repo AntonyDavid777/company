@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="mod 1 .css" />
+</head>
+<body style="background-color:antiquewhite">
+  <main class="login-wrapper">
+    <form class="login-card" id="loginForm" novalidate>
+      <h1 class="title">Welcome Back</h1>
+      <p class="subtitle">Please sign in to your account</p>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" />
+      </div>
+
+      <p class="message" id="message" role="alert"></p>
+
+      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="button" class="btn btn-secondary" id="registerBtn">Register</button>
+      <button  type="button" class="btn btn-primary"><a href="vechicle.html">next</a></button>
+    </form>
+  </main>
+
+  <script src="mod 1.js"></script>
+</body>
+</html>

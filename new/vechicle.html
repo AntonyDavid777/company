@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select Vehicle</title>
+  <link rel="stylesheet" href="vechicle.css" />
+</head>
+<body style="background-color: antiquewhite;">
+  <main class="login-wrapper">
+    <img src="re.jpeg" style="max-width: 300px; width: 100%; height: 60%;">
+    <img src="yamaha.jpeg" style="max-width: 300px; width: 100%; height: 60%;">
+    <img src="tvs.jpeg" style="max-width: 300px; width: 100%; height: 60%;">
+    <img src="triump.jpeg" style="max-width: 300px; width: 100%; height: 60%;">
+    <div class="login-card">
+      <h1 class="title">Select Your Vehicle</h1>
+      <p class="subtitle">Choose a vehicle type to continue</p>
+
+      <div class="field">
+        <label for="vehicle">Vehicle</label>
+        <select id="vehicle" class="select">
+          <option value="">-- Select Vehicle --</option>
+          <option value="two">Two Wheeler</option>
+          <option value="four">Four Wheeler</option>
+        </select>
+      </div>
+      <div class="fields">
+        <label for="brand">bike brand</label>
+        <select id="brand" class="select">
+          <option value="">-- Select brand --</option>
+          <option value="honda">honda</option>
+          <option value="yamaha">yamaha</option>
+          <option value="TVS">TVS</option>
+          <option value="triump">triump</option>
+          <option value="RE">RE</option>
+        </select>
+      </div>
+
+      <p class="message" id="message" role="alert"></p>
+    </div>
+  </main>
+
+  <script src="vehicle.js"></script>
+</body>
+</html>
