@@ -35,3 +35,6 @@ registerBtn.addEventListener("click", function () {
   // Point this to your registration page when ready:
   // window.location.href = "register.html";
 });
+function nextPage() {
+    window.location.href = "/home";
+}

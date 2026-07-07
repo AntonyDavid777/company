@@ -93,6 +93,7 @@ model:model
 .then(data => {
 
     const result = document.getElementById("result");
+    result.style.display = "block";
 
     if (data.error) {
 
@@ -119,5 +120,11 @@ model:model
 
 });
 
+});
+
+const fuelButton = document.getElementById("fuelbtn");
+
+fuelButton.addEventListener("click", function () {
+    window.location.href = "/fuel";
 });
 

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000,#111,#1a1a1a);
+    overflow-y:auto;
+    overflow-x: hidden;
+    position:relative;
+     padding:40px 0;
+}
+
+/* Orange Glow Background */
+body::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#ff7b00;
+    filter:blur(170px);
+    opacity:.18;
+    top:-150px;
+    left:-150px;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#ff9500;
+    filter:blur(170px);
+    opacity:.18;
+    bottom:-120px;
+    right:-120px;
+}
+
+#vehicleForm{
+    width:420px;
+    background:rgba(20,20,20,.88);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:
+        0 0 30px rgba(255,123,0,.2),
+        0 20px 40px rgba(0,0,0,.6);
+    position:relative;
+    z-index:10;
+    animation:popup .7s ease;
+}
+
+h1{
+    position:static;
+    margin-bottom:30px;
+    color:white;
+    font-size:34px;
+    letter-spacing:1px;
+}
+
+label{
+    display:block;
+    color:#ff9d00;
+    font-size:15px;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+select{
+    width:100%;
+    padding:14px;
+    border-radius:10px;
+    border:2px solid #333;
+    background:#111;
+    color:white;
+    font-size:15px;
+    outline:none;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+select:focus{
+    border-color:#ff8c00;
+    box-shadow:0 0 15px rgba(255,140,0,.6);
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#ff7b00;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(255,123,0,.45);
+}
+
+button:hover{
+    background:#ff9500;
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 20px rgba(255,123,0,.8),
+        0 0 40px rgba(255,123,0,.6);
+}
+#result{
+    display:none;               /* Hidden initially */
+    width:500px;
+    margin-top:25px;
+    padding:20px;
+    background:rgba(20,20,20,.9);
+    border:2px solid #ff7b00;
+    border-radius:15px;
+    color:white;
+    text-align:left;
+    line-height:1.8;
+    box-shadow:
+        0 0 20px rgba(255,123,0,.5),
+        0 0 40px rgba(255,123,0,.2);
+    animation:fadeIn .5s ease;
+}
+
+#result h2{
+    color:#ff9d00;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+#result p{
+    margin:8px 0;
+    font-size:16px;
+}
+
+#result span{
+    color:#ffb347;
+    font-weight:bold;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:translateY(40px) scale(.95);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}
+
+@media(max-width:500px){
+
+    h1{
+        font-size:28px;
+        top:30px;
+    }
+
+    #vehicleForm{
+        width:90%;
+        padding:25px;
+    }
+
+    #fuelbtn{
+        width:90%;
+    }
+
+}
+
+
+
+#fuelbtn{
+    position:absolute;
+    bottom:15px;
+    width:250px;
+}
+
+#fuelbtn button{
+    background:transparent;
+    border:2px solid #ff7b00;
+    color:#ff7b00;
+}
+
+#fuelbtn button:hover{
+    background:#ff7b00;
+    color:white;
+}
+/* Result Box */
+

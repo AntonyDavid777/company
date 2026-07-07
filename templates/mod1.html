@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
-  <link rel="stylesheet" href="mod 1 .css" />
+  <link rel="stylesheet" href="/static/css/mod1.css" />
 </head>
-<body style="background-color:antiquewhite">
+<body>
   <main class="login-wrapper">
     <form class="login-card" id="loginForm" novalidate>
       <h1 class="title">Welcome Back</h1>
@@ -26,10 +26,12 @@
 
       <button type="submit" class="btn btn-primary">Login</button>
       <button type="button" class="btn btn-secondary" id="registerBtn">Register</button>
-      <button  type="button" class="btn btn-primary"><a href="vechicle.html">next</a></button>
+       <button type="button" class="btn btn-primary" onclick="window.location.href='/home'">
+            Next
+         </button>
     </form>
   </main>
 
-  <script src="mod 1.js"></script>
+  <script src="/static/js/mod1.js"></script>
 </body>
 </html>
